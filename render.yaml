@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: bsca-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+      - key: ARK_API_KEY
+        sync: false
+      - key: ARK_MODEL_ID
+        sync: false
+      - key: ARK_BASE_URL
+        value: https://ark.cn-beijing.volces.com/api/v3
+      - key: RATE_LIMIT_PER_HOUR
+        value: "20"
+      - key: DAILY_QUOTA
+        value: "500"

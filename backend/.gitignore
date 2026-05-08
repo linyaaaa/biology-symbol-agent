@@ -1,0 +1,16 @@
+ARK_API_KEY
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# Sensitive data - DO NOT COMMIT
+data/Dataset*/
+data/*/normalized_matrix/
+*.mtx.gz
+*.tsv.gz
+clean.meta.txt
+
+# Public (sanitized) gene lists - SAFE to commit
+!data/public/
+!data/public/**/genes.txt

@@ -1,0 +1,31 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment
+.env
+.env.local
+
+# Render
+render-blueprint.json
+
+
+# Sensitive data - DO NOT COMMIT
+data/Dataset*/
+data/*/normalized_matrix/
+*.mtx.gz
+*.tsv.gz
+clean.meta.txt
