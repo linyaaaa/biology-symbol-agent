@@ -11,7 +11,7 @@ import os
 import json
 from openai import OpenAI
 
-ARK_API_KEY = os.getenv("ARK_API_KEY", "3266ee92-5d65-400d-95b2-7be87d48899a")
+ARK_API_KEY = os.getenv("ARK_API_KEY", "")
 ARK_MODEL_ID = os.getenv("ARK_MODEL_ID", "glm-4-7-251222")
 ARK_BASE_URL = os.getenv("ARK_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
 
